@@ -5,6 +5,7 @@ import styles from './Header.module.sass';
 import CONSTANTS from '../../constants';
 import { clearUserStore } from '../../store/slices/userSlice';
 import { getUser } from '../../store/slices/userSlice';
+import Pricing from '../Pricing';
 
 class Header extends React.Component {
   componentDidMount() {
@@ -169,7 +170,10 @@ class Header extends React.Component {
                       <a href="http://www.google.com">How It Works</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">Pricing</a>
+                      {/* <a href="http://www.google.com">Pricing</a> */}
+                      <Link to = "/pricing">
+                        Pricing
+                      </Link>
                     </li>
                     <li>
                       <a href="http://www.google.com">Agency Service</a>

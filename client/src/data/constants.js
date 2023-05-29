@@ -51,7 +51,8 @@ const STATUS = {
     description: 'A full agency experience without the agency price tag',
     price: 1499,
     title: `
-    Receive optimum results from your Platinum Contest by launching a Managed Contest Package and working one-on-one with an experienced Squadhelp Branding Consultant.With significantly more validation services, professional brief creation, and daily management of your contest by your Branding Expert, you'll receive an enhanced branding experience to closeout your branding project.Learn More about Managed Contest Service
+    Receive optimum results from your Platinum Contest by launching a Managed Contest Package and working one-on-one with an experienced Squadhelp Branding Consultant.
+    With significantly more validation services, professional brief creation, and daily management of your contest by your Branding Expert, you'll receive an enhanced branding experience to closeout your branding project.Learn More about Managed Contest Service
     `,
   },
 };

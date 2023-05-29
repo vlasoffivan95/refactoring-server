@@ -1,57 +1,108 @@
-.sectionCard{
-    
-    display: flex;
-    flex-direction: column;
-    padding: 20px 10px;
-    margin:20px;
-    justify-content: space-between; 
-    min-height: 150px;
-};
-
-
-.cardDescription {
-    padding: 0 20px;
-    font-size:12px;
+.sectionCard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  margin: 20px;
+  justify-content: space-between;
+  min-height: 150px;
 }
 
-.pDescription {
+.cardDescription {
+  padding: 0 20px;
+  font-size: 12px;
+}
 
-    border-bottom: 2px solid #ddd;
-    padding: 10px 0 10px 0;
-    margin-bottom:10px;
+.divDescription {
+  border-bottom: 2px solid #ddd;
+  padding: 10px 0 10px 0;
+  margin-bottom: 10px;
+}
+
+.titleDescription {
+  padding: 10px 2px 10px 2px;
+  margin: 20px 0 10px 0;
+  line-height: 22px;
 }
 
 .sectionBronze {
-    border:8px solid#e0b48d;
-
+  border: 8px solid#e0b48d;
 }
 
-
-.titleName  {
-    font-size:30px;
-    font-weight: 800;
-    margin: 10px 0 10px 0;
+.sectionGold {
+  border: 8px solid #e8b954;
 }
 
-.titleBronze {
-    color:#e0b48d
+.sectionPlatinum {
+  border: 8px solid #555;
+}
+
+.sectionManaged {
+  border: 8px solid #28d2d0;
+}
+
+.titleName {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 10px 0 10px 0;
+}
+
+.titleBronze,
+.priceBronze {
+  color: #e0b48d;
+}
+
+.titleGold,
+.priceGold {
+  color: #e8b954;
+}
+
+.titlePlatinum,
+.pricePlatinum, .priceManaged {
+  color: #555;
+}
+
+.titleManaged {
+    color: #28d2d0
 }
 
 .description {
-    font-size:14px;
-    font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .price {
-    color:#e0b48d;
-    text-align: right;
-    font-size: 18px;
-    font-weight: 600;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .btn {
-    width:100%;
-    padding: 10px 0;
-    border-radius: 5px;
-    font-size:16px;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 800;
+  color:white;   
+}
+
+.liDescription {
+  padding: 20px 30px 10px 30px;
+  font-size: 12px;
+}
+
+.btnBronze {
+    background-color:#e0b48d;
+ 
+}
+
+.btnGold {
+    background-color: #e8b954;
+}
+
+.btnPlatinum {
+    background-color: #555;
+}
+
+.btnManaged {
+    background-color: #28d2d0;
 }

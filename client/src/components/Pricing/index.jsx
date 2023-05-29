@@ -32,24 +32,28 @@ function Pricing({
           </h2>
           <p className={styles.description}>{description}</p>
         </div>
-        <p className={styles.price}>US${price}</p>
+        <p className={`${styles[`price${titleName}`]} ${styles.price}`}>US${price}</p>
       </section>
       <section className={styles.cardDescription}>
-        <p className={styles.pDescription}>
-          Prize to Winner - $ {prize_to_winner} (Included)
-        </p>
-        <p className={styles.pDescription}>
-          {validation_and_upgrade} (Included)
-        </p>
-        <p className={styles.pDescription}>{expected}</p>
+        {prize_to_winner? <div className={styles.divDescription}>
+          Prize to Winner - $ {prize_to_winner}
+        </div> : null}
+        
+        {validation_and_upgrade ? <div className={styles.divDescription}>
+          {validation_and_upgrade}
+          {listBenefits ? (
+            <p className={styles.liDescription}>{listBenefits}</p>
+          ) : null}
+        </div> : null}
+
+        {expected? <div className={styles.divDescription}>{expected}</div>:null}
         {partial_refund ? (
-          <p className={styles.pDescription} display>
-            {partial_refund}
-          </p>
+          <div className={styles.divDescription}>{partial_refund}</div>
         ) : null}
 
-        <button className={styles.btn}>✓Start</button>
-        {listBenefits}
+        {title?<div className={styles.titleDescription}>{title}</div>:null }
+
+        <button className={`${styles[`btn${titleName}`]} ${styles.btn}`}>✓Start</button>
       </section>
     </div>
   );

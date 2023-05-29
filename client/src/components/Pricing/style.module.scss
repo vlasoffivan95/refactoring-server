@@ -1,0 +1,51 @@
+.sectionCard{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    margin:20px;
+    justify-content: space-between; 
+    min-height: 150px;
+};
+
+
+.cardDescription {
+    padding: 0 20px;
+    font-size:12px;
+}
+
+.pDescription {
+
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0 10px 0;
+    margin-bottom:10px;
+}
+
+.sectionBronze {
+    border:5px solid#e0b48d;
+
+}
+
+
+.titleName  {
+    font-size:30px;
+    font-weight: 800;
+    margin: 10px 0 10px 0;
+}
+
+.titleBronze {
+    color:#e0b48d
+}
+
+.description {
+    font-size:14px;
+    font-weight: 600;
+}
+
+.price {
+    color:#e0b48d;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 600;
+}
+

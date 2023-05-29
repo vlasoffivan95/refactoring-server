@@ -1,11 +1,40 @@
 import React from 'react';
+import styles from './style.module.scss';
 
-const Pricing = () => {
-    return (
+function Pricing({
+  titleName,
+  description,
+  price,
+  prize_to_winner,
+  validation_and_upgrade,
+  validation_and_upgrade_list,
+  expected,
+  partial_refund,
+  title,
+}) {
+  console.log(styles[titleName]);
+  console.log(titleName);
+  return (
+    <div>
+      <section
+        className={`${styles.sectionCard} ${styles[`section${titleName}`]}`}
+      >
         <div>
-            KEKEKEKEKEKKE
+          <h2 className={`${styles[`title${titleName}`]} ${styles.titleName}`}>
+            {titleName}
+          </h2>
+          <p className={styles.description}>{description}</p>
         </div>
-    );
+        <p className={styles.price}>US${price}</p>
+      </section>
+      <section className={styles.cardDescription}>
+        <p className = {styles.pDescription}>Prize to Winner - $ {prize_to_winner} (Included)</p>
+        <p className = {styles.pDescription}>{validation_and_upgrade} (Included)</p>
+        <p className = {styles.pDescription}>{expected}</p>
+        {partial_refund? <p className = {styles.pDescription} display>{partial_refund}</p>:null}
+      </section>
+    </div>
+  );
 }
 
 export default Pricing;
